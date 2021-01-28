@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_menu_setting"
+        android:title="Setting">
+
+        <menu>
+            <item
+                android:id="@+id/drawer_menu_setting1"
+                android:title="Setting 1"/>
+            <item
+                android:id="@+id/drawer_menu_setting2"
+                android:title="Setting 2"/>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/drawer_menu_logout"
+        android:title="Log Out"
+        android:icon="@drawable/ic_vpn_key_black_24dp"/>
+
+</menu>
