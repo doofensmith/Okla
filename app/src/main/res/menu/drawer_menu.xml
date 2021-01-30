@@ -7,10 +7,10 @@
 
         <menu>
             <item
-                android:id="@+id/drawer_menu_setting1"
+                android:id="@+id/drawer_menu_buatroom"
                 android:title="Buat Room"/>
             <item
-                android:id="@+id/drawer_menu_setting2"
+                android:id="@+id/drawer_menu_cariroom"
                 android:title="Cari Room"/>
         </menu>
 
