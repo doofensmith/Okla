@@ -17,10 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VerifikasiHP" />
-        <activity android:name=".VerifikasiEmail" />
-        <activity android:name=".Register" />
-        <activity android:name=".Login" />
+        <activity
+            android:name=".VerifikasiHP"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".VerifikasiEmail"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Register"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="adjustResize" />
         <activity android:name=".MainActivity"/>
     </application>
 

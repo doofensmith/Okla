@@ -12,6 +12,7 @@
     <include layout="@layout/activity_main" />
 
     <com.google.android.material.navigation.NavigationView
+        android:id="@+id/amd_nview"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
