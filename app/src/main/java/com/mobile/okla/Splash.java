@@ -28,7 +28,7 @@ public class Splash extends AppCompatActivity {
                 Intent intent;
 
                 //cek user login
-                if (FirebaseAuth.getInstance().getCurrentUser()!=null) {
+                if (FirebaseAuth.getInstance().getCurrentUser()==null) {
                     intent = new Intent(Splash.this, Login.class);
                 }else {
                     intent = new Intent(Splash.this, MainActivity.class);
