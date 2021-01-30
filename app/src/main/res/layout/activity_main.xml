@@ -16,6 +16,27 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark"
             app:navigationIcon="@drawable/ic_menu_black_24dp" />
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Buat Room"-->
+<!--                android:textAllCaps="false" />-->
+
+<!--            <Button-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Cari Room"-->
+<!--                android:textAllCaps="false"/>-->
+
+<!--        </LinearLayout>-->
+
     </com.google.android.material.appbar.AppBarLayout>
 
     <FrameLayout
