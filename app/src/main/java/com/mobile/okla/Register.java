@@ -103,6 +103,7 @@ public class Register extends AppCompatActivity {
                                         //change activity
                                         startActivity(new Intent(Register.this, MainActivity.class));
                                         finish();
+
                                     }else {
                                         //progress bar off
                                         progressBar.setVisibility(View.GONE);
