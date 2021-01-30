@@ -3,15 +3,15 @@
 
     <item
         android:id="@+id/drawer_menu_setting"
-        android:title="Setting">
+        android:title="Room">
 
         <menu>
             <item
                 android:id="@+id/drawer_menu_setting1"
-                android:title="Setting 1"/>
+                android:title="Buat Room"/>
             <item
                 android:id="@+id/drawer_menu_setting2"
-                android:title="Setting 2"/>
+                android:title="Cari Room"/>
         </menu>
 
     </item>
