@@ -7,7 +7,7 @@
         android:icon="@drawable/ic_home_black_24dp"/>
 
     <item
-        android:id="@+id/am_nb_menu_profile"
+        android:id="@+id/am_bn_menu_profile"
         android:title="Profile"
         android:icon="@drawable/ic_person_black_24dp"/>
 

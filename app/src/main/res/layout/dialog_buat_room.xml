@@ -3,27 +3,31 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:layout_marginHorizontal="20dp"
-    android:layout_marginVertical="12dp">
+    android:orientation="vertical">
 
     <EditText
+        android:id="@+id/dbm_ed_namaroom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nama room"
         android:textColor="@android:color/black"
+        android:textSize="12sp"
         android:maxLines="1"
         android:maxLength="30"
         android:inputType="textCapSentences"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="20dp"/>
 
     <EditText
+        android:id="@+id/dbm_ed_pwroom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password room"
         android:textColor="@android:color/black"
+        android:textSize="12sp"
         android:maxLines="1"
         android:maxLength="6"
-        android:inputType="numberPassword"/>
+        android:inputType="numberPassword"
+        android:layout_marginHorizontal="20dp"/>
 
 </LinearLayout>
