@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/acr_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="Nama Chat Room"
@@ -21,6 +22,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/acr_recycleview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
@@ -33,6 +35,7 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/acr_ed_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

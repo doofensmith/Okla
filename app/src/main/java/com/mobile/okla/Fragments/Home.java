@@ -49,8 +49,7 @@ public class Home extends Fragment {
         //auth
         auth = FirebaseAuth.getInstance();
         //database reference root
-        databaseReference = FirebaseDatabase.getInstance().getReference()
-                .child(auth.getCurrentUser().getUid());
+        databaseReference = FirebaseDatabase.getInstance().getReference();
         //set option
         options = new FirebaseRecyclerOptions.Builder<MRoom>()
                 .setQuery(databaseReference.child("Room"),MRoom.class).build();

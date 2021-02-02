@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity {
         //auth
         auth = FirebaseAuth.getInstance();
         //database reference root
-        databaseReference = FirebaseDatabase.getInstance().getReference()
-                .child(auth.getCurrentUser().getUid());
+        databaseReference = FirebaseDatabase.getInstance().getReference();
 
         //default fragment
         changeFragment(new Home());
@@ -76,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.drawer_menu_buatroom:
                         drawerLayout.closeDrawers();
-                        buatRoom(databaseReference);
+                        buatRoom(databaseReference,auth);
                         break;
                     case R.id.drawer_menu_cariroom:
                         Toast.makeText(MainActivity.this, "Gak tau buat apa", Toast.LENGTH_SHORT).show();
@@ -126,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public void buatRoom(final DatabaseReference databaseReference) {
+    public void buatRoom(final DatabaseReference databaseReference, final FirebaseAuth auth) {
         //inflate dialog view
         LayoutInflater inflater = LayoutInflater.from(this);
         View view = inflater.inflate(R.layout.dialog_buat_room,null);
@@ -164,7 +163,7 @@ public class MainActivity extends AppCompatActivity {
 
                     //prepare data
                     String keyroom = databaseReference.child("Room").push().getKey();
-                    MRoom mRoom = new MRoom(keyroom,namaroom,pwroom,"",0);
+                    MRoom mRoom = new MRoom(keyroom,namaroom,pwroom,"",0,"",auth.getCurrentUser().getUid(),"");
                     //save data
                     databaseReference.child("Room").child(keyroom).setValue(mRoom).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override

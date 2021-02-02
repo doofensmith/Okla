@@ -96,7 +96,7 @@ public class Register extends AppCompatActivity {
                                         //save data
                                         databaseReference = FirebaseDatabase.getInstance().getReference().child(auth.getCurrentUser().getUid());
                                         //prepare data
-                                        MUser mUser = new MUser(email,password,"User");
+                                        MUser mUser = new MUser(email,password,"Pengguna","","User");
                                         //proses save data
                                         databaseReference.setValue(mUser);
 

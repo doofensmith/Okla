@@ -3,12 +3,36 @@ package com.mobile.okla.Model;
 public class MUser {
     private String email;
     private String password;
+    private String namapengguna;
+    private String nohp;
     private String tipe;
 
-    public MUser(String email, String password, String tipe) {
+    public MUser() {
+
+    }
+
+    public MUser(String email, String password, String namapengguna, String nohp, String tipe) {
         this.email = email;
         this.password = password;
+        this.namapengguna = namapengguna;
+        this.nohp = nohp;
         this.tipe = tipe;
+    }
+
+    public String getNamapengguna() {
+        return namapengguna;
+    }
+
+    public void setNamapengguna(String namapengguna) {
+        this.namapengguna = namapengguna;
+    }
+
+    public String getNohp() {
+        return nohp;
+    }
+
+    public void setNohp(String nohp) {
+        this.nohp = nohp;
     }
 
     public String getTipe() {
