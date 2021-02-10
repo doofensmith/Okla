@@ -1,6 +1,7 @@
 package com.mobile.okla.Fragments;
 
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -83,8 +84,23 @@ public class Profile extends Fragment {
         bt_editprofil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                AlertDialog dialog = new AlertDialog.Builder(getActivity()).create();
-                dialog.setTitle("");
+                AlertDialog dialog = new AlertDialog.Builder(getContext()).create();
+                dialog.setTitle("Edit Profile");
+                dialog.setContentView(R.layout.activity_edit_profile);
+                dialog.setCancelable(false);
+                dialog.setButton(DialogInterface.BUTTON_POSITIVE, "Simpan", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                dialog.setButton(DialogInterface.BUTTON_NEGATIVE, "Batal", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+                dialog.show();
             }
         });
 
