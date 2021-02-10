@@ -6,17 +6,37 @@ public class MUser {
     private String namapengguna;
     private String nohp;
     private String tipe;
+    private String alamat;
+    private String jeniskelamin;
 
     public MUser() {
 
     }
 
-    public MUser(String email, String password, String namapengguna, String nohp, String tipe) {
+    public MUser(String email, String password, String namapengguna, String nohp, String tipe, String alamat, String jeniskelamin) {
         this.email = email;
         this.password = password;
         this.namapengguna = namapengguna;
         this.nohp = nohp;
         this.tipe = tipe;
+        this.alamat = alamat;
+        this.jeniskelamin = jeniskelamin;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+
+    public String getJeniskelamin() {
+        return jeniskelamin;
+    }
+
+    public void setJeniskelamin(String jeniskelamin) {
+        this.jeniskelamin = jeniskelamin;
     }
 
     public String getNamapengguna() {

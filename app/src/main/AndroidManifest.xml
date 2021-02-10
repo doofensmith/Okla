@@ -10,7 +10,6 @@
         android:roundIcon="@mipmap/ic_okla_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".chat_kanan"></activity>
         <activity android:name=".ChatRoom" />
         <activity android:name=".EditProfile" />
         <activity android:name=".Splash">

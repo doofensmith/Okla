@@ -41,7 +41,7 @@
             android:layout_weight="1"
             android:layout_gravity="bottom"
             android:hint="Message..."
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:maxLines="5"
             android:ellipsize="end"
             android:inputType="textMultiLine|textCapSentences"

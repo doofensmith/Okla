@@ -105,7 +105,7 @@ public class ChatRoom extends AppCompatActivity {
                                         //clear text
                                         ed_message.setText("");
                                         ed_message.clearFocus();
-                                        //hide softkey
+                                        //hide softkeyboard
                                         InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                                         inputMethodManager.hideSoftInputFromWindow(ed_message.getWindowToken(),0);
                                         //scroll
@@ -157,7 +157,7 @@ public class ChatRoom extends AppCompatActivity {
                                 //clear text
                                 ed_message.setText("");
                                 ed_message.clearFocus();
-                                //hide softkey
+                                //hide soft keyboard
                                 InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
                                 inputMethodManager.hideSoftInputFromWindow(ed_message.getWindowToken(),0);
                                 //scroll

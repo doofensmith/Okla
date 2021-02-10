@@ -87,4 +87,9 @@ public class ARoom extends FirebaseRecyclerAdapter<MRoom, VHRoom> {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fh_item,parent,false);
         return new VHRoom(view);
     }
+
+    @Override
+    public int getItemViewType(int position) {
+        return super.getItemViewType(position);
+    }
 }
